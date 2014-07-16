@@ -1,4 +1,5 @@
 <?php
+define("version", "1.0.0");
 
 final class Log{
 	private static $enable  = true;

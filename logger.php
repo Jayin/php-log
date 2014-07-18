@@ -38,7 +38,7 @@ final class Logger{
 	}
 
 	public static function i_var_dump($msg){
-		self::output(self::$mode_info,$msg);
+		self::output(self::$mode_info,$msg,true);
 	}
 
 	private static function output($mode,$msg,$isVarDump = false){

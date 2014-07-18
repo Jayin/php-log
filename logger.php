@@ -1,7 +1,7 @@
 <?php
-define("version", "1.0.0");
+define("version", "1.1.0");
 
-final class Log{
+final class Logger{
 	private static $enable  = true;
 	private static $mode_error = "Error";
 	private static $mode_debug = "Debug";

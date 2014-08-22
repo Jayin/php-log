@@ -3,9 +3,12 @@ php-logger
 just enjoy logging in your browser with color message.
 
 ### Usage
+
+**better display in browser**
+
 ```php
 
-    require_once "logger.php";
+    require_once "logger-browser.php";
 
     Logger::d("hello logger debug");
 
@@ -26,5 +29,19 @@ to generate the html
 <span style="color:green">0:58:30 Debug:<br></span>hello logger debug<br><span style="color:green">0:58:30 Debug:<br></span>string(27) "hello logger debug var dump"
 <br><span style="color:red">0:58:30 Error:<br></span>hello logger Error<br><span style="color:red">0:58:30 Error:<br></span>string(27) "hello logger Error var dump"
 <br><span style="color:blue">0:58:30 Info:<br></span>hello logger Info<br><span style="color:blue">0:58:30 Info:<br></span>hello logger Info var dump<br>
+
+```
+
+**Log in file**
+
+```php
+require_once 'Logger.php';
+
+$l  = new Logger('log.txt');
+$a = array(
+    'nice' => 1
+);
+//$l->clean();
+$l->d( $a);
 
 ```
